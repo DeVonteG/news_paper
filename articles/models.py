@@ -38,11 +38,10 @@ class Article(models.Model):
         null=True
     )
     body = models.TextField()
-    created_on = modes.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
         return reverse('detail', args=[self.id])  #make sure you implement a detail URL pattern with this name
-
