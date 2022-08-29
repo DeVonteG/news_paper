@@ -1,0 +1,63 @@
+@media (min-width: 768px) {
+
+    .signup{
+        margin-top: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid grey ;
+        border-radius: 25px;
+        /* width: 40%; */
+        padding: 4.5rem;
+        position: relative;
+        background-color: darkgrey;
+    }
+
+    .signup-text{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .token{
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: auto;
+    }
+    
+
+    .submit-btn{
+        padding-top: 1.5rem;
+        position:absolute;
+        left: 30%;
+        
+    }
+
+}
+
+
+.signup{
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid grey ;
+    width: 40%;
+    padding: 5rem;
+    position: relative;
+    background-color: darkgray;
+}
+.signup-text{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.token{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submit-btn{
+    padding-top: 1.5rem;
+    position:absolute;
+    left: 50%;
+}

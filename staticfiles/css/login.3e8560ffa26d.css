@@ -1,0 +1,25 @@
+.login{
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid red ;
+    width: 50%;
+    padding: 4.5rem;
+    position: relative;
+}
+
+.login-text{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* .btn-container-login{
+    position: relative;
+} */
+
+.submit-btn{
+    padding-top: 1.2rem;
+    align-items: center;
+    position:absolute;
+    left: 35%;
+}
