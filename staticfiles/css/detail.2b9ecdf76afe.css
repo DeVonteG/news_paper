@@ -1,0 +1,13 @@
+.details{
+    margin-top: 200px;
+    display: flexbox;
+}
+
+.detail-headers{
+    font-family: serif;
+    margin-bottom: 2 rem;
+}
+
+.detail-body {
+    margin-top: 2rem;
+}

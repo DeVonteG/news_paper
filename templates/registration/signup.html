@@ -8,11 +8,11 @@
         <div class="signup-text">
             <h1>Sign Up</h1>
         </div>
-        <form method="POST">
-            <div class="token">
-                {% csrf_token %}
-                {{ form.as_p }}
-            </div>
+            <form method="POST">
+                <div class="token">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                </div>
             <div class="submit-btn">
                 <input type="submit" value='signup' class="btn btn-primary">
             </div>

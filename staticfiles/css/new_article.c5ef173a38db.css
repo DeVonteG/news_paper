@@ -1,0 +1,9 @@
+.new-article-container{
+    margin-top: 200px;
+    border: 2px solid red;
+}
+
+.new-article{
+    margin-left: auto;
+    margin-right: auto;
+}

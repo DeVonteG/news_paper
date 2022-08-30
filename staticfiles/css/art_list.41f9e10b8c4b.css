@@ -1,0 +1,14 @@
+.article-text {
+    font-family: serif;
+    margin-top: 200px;
+    text-align: center;
+    background-color: aqua;
+    border: 2px solid red;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}

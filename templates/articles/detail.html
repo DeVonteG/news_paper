@@ -1,21 +1,27 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
 {% block title %}{{  article.title  }}{% endblock title %}
 
 
 {% block content %}
-<h1>{{ article.title }}</h1>
-<h3>{{ article.subtitle }}</h3>
-<small>By: {{ article.author }} | On: {{ article.created_on }}</small>
-<p>{{ article.body }}</p>
-
-    {% if user.id == article.author.id %}
-        <p>
-            <a href="{% url 'article_edit' article.id %}" class= 'btn btn-primary'>Edit</a>
-        </p>
-        <p>
-            <a href="{% url 'article_delete' article.id %}" class= 'btn btn-danger'>Delete</a>
-        </p>
-    {% endif %}
+<div class="details">
+    <div class="detail-headers">
+        <h1>{{ article.title }}</h1>
+        <h3>{{ article.subtitle }}</h3>
+    </div>
+    <small>By: {{ article.author }} | On: {{ article.created_on }}</small>
+    <div class="detail-body">
+        <p>{{ article.body }}</p>
+    </div>
+        {% if user.id == article.author.id %}
+            <p>
+                <a href="{% url 'article_edit' article.id %}" class= 'btn btn-primary'>Edit</a>
+            </p>
+            <p>
+                <a href="{% url 'article_delete' article.id %}" class= 'btn btn-danger'>Delete</a>
+            </p>
+        {% endif %}
+</div>
 {% endblock content %}

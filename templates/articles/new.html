@@ -1,13 +1,24 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}New Article{% endblock title %}
 
 
 {% block content %}
-<h1>New Article</h1>
-<form method='POST'>
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Create">
-</form>
+
+<div class="article-outlook">
+    <p><h4>Note:</h4> Below the Editor, Columnist and supervisor will create articles. The editors will adjust the type of article it is and post (create).</p>
+</div>
+<div class="new-article-container">
+    <div class="new-article">
+        <div class="article-new">
+            <h1>New Article</h1>
+        </div>
+    <form method='POST'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Create">
+    </form>
+    </div>
+</div>
 {% endblock content %}

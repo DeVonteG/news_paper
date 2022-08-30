@@ -1,0 +1,10 @@
+.article-text {
+    font-family: serif;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}

@@ -22,7 +22,7 @@ class ArticleDetailView(DetailView):
     model = Article
 
 class ArticleCreateView(LoginRequiredMixin, CreateView):
-    template_name = "articles/create.html"
+    template_name = "articles/new.html"
     model = Article
     fields = ['title', 'subtitle', 'body']
 

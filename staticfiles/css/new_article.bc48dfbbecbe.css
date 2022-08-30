@@ -1,0 +1,10 @@
+.new-article-container{
+    margin-top: 200px;
+    align-content: center;
+    border: 2px solid red;
+}
+
+.new-article-text{
+    text-align: center;
+    display: flexbox;
+}
